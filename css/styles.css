@@ -29,11 +29,11 @@
 * body .main {
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 25px;
+  gap: 15px;
 }
 * body .main .imageLogo {
   width: 301px;
@@ -43,13 +43,13 @@
   max-width: 400px;
   display: flex;
   flex-direction: column;
-  gap: 55px;
+  gap: 30px;
 }
 * body .main .timer .time {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   letter-spacing: 0.5px;
-  font-size: 24px;
+  font-size: 36px;
   color: #FFF;
   text-align: center;
 }
@@ -75,6 +75,19 @@
 }
 * body .main .timer .controls .pause:hover, * body .main .timer .controls .start:hover, * body .main .timer .controls .stop:hover {
   filter: brightness(0.8);
+}
+* body .footer {
+  position: absolute;
+  left: 50%;
+  bottom: 20px;
+  transform: translateX(-50%);
+}
+* body .footer .text {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 14px;
+  color: #FFF;
 }
 
 /*# sourceMappingURL=styles.css.map */
