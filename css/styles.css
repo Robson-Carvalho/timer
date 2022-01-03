@@ -1,3 +1,29 @@
-
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+* body {
+  width: 100vw;
+  height: 100vh;
+  background: #EC6F66;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to bottom, #F3A183, #EC6F66);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to bottom, #F3A183, #EC6F66);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+* body .header {
+  max-width: 400px;
+  margin: 0 auto;
+  padding-top: 25px;
+}
+* body .header .title {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #FFF;
+  text-align: center;
+}
 
 /*# sourceMappingURL=styles.css.map */
