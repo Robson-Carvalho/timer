@@ -21,6 +21,7 @@
 * body .header .title {
   font-family: "Roboto", sans-serif;
   font-weight: 700;
+  font-size: 48px;
   letter-spacing: 2px;
   color: #FFF;
   text-align: center;
@@ -28,14 +29,52 @@
 * body .main {
   max-width: 400px;
   margin: 0 auto;
-  margin-top: 25px;
+  margin-top: 80px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 25px;
 }
 * body .main .imageLogo {
   width: 301px;
   height: 226px;
+}
+* body .main .timer {
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 55px;
+}
+* body .main .timer .time {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+  font-size: 24px;
+  color: #FFF;
+  text-align: center;
+}
+* body .main .timer .controls {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+* body .main .timer .controls .pause, * body .main .timer .controls .start, * body .main .timer .controls .stop {
+  width: 220px;
+  height: 45px;
+  border: none;
+  background: #fff;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  letter-spacing: 0.5px;
+  font-size: 18px;
+  color: #000;
+  transition: 0.2s;
+}
+* body .main .timer .controls .pause:hover, * body .main .timer .controls .start:hover, * body .main .timer .controls .stop:hover {
+  filter: brightness(0.8);
 }
 
 /*# sourceMappingURL=styles.css.map */
