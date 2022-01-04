@@ -11,6 +11,7 @@ const checkForTwoDigits = (digit) => {
 }
 
 const start = () => {
+    time()
     interval = setInterval(time, 1000)
 }
 
