@@ -79,7 +79,7 @@
 * body .footer {
   position: absolute;
   left: 50%;
-  bottom: 20px;
+  bottom: 10px;
   transform: translateX(-50%);
 }
 * body .footer .text {
