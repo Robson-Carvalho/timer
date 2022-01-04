@@ -1,7 +1,8 @@
-var hours = 0
-var minutes = 0
 var seconds = 0
+var minutes = 0
+var hours = 0
 var interval = 0
+var click = 0
 
 const checkForTwoDigits = (digit) => {
     if(digit<10){
@@ -11,11 +12,15 @@ const checkForTwoDigits = (digit) => {
 }
 
 const start = () => {
-    time()
-    interval = setInterval(time, 1000)
+    click++
+    if(click === 1){
+        time()
+        interval = setInterval(time, 1000)
+    }
 }
 
 const pause = () => {
+    click = 0
     clearInterval(interval)
 }
 
@@ -23,9 +28,9 @@ const stop = () => {
     clearInterval(interval)
     seconds = 0 
     minutes = 0
+    hours = 0
     document.getElementById('time').innerText="00:00:00"
 }
-
 
 const time = () => {
     seconds++
